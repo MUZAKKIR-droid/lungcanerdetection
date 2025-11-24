@@ -1,0 +1,5 @@
+Model Type: Random Forest
+Training Accuracy: 1.0000
+Dataset: Synthetic (200 samples)
+Total Samples: 200
+Cancer Cases: 67 (33.5%)

@@ -14,16 +14,16 @@ def load_model():
     """Load the trained model"""
     model_file = 'trained_model.pkl'
     if not os.path.exists(model_file):
-        print("❌ Error: trained_model.pkl not found!")
+        print(" Error: trained_model.pkl not found!")
         return None
     
     try:
         with open(model_file, 'rb') as f:
             model = pickle.load(f)
-        print("✅ Model loaded successfully\n")
+        print(" Model loaded successfully\n")
         return model
     except Exception as e:
-        print(f"❌ Error loading model: {e}")
+        print(f" Error loading model: {e}")
         return None
 
 def preprocess_image(image_path):
@@ -51,7 +51,7 @@ def preprocess_image(image_path):
         return flattened.reshape(1, -1)
     
     except Exception as e:
-        print(f"❌ Error processing image: {e}")
+        print(f" Error processing image: {e}")
         return None
 
 def predict(model, image_path):
@@ -93,7 +93,7 @@ def predict(model, image_path):
         print("\n" + "="*60)
         
     except Exception as e:
-        print(f"\n❌ Prediction failed: {e}")
+        print(f"\n Prediction failed: {e}")
 
 def main():
     """Main function"""
@@ -116,11 +116,11 @@ def main():
         image_path = input("📁 Enter image path (or drag & drop): ").strip().strip("'\"")
     
     if not image_path:
-        print("❌ No image path provided!")
+        print(" No image path provided!")
         return
     
     if not os.path.exists(image_path):
-        print(f"❌ File not found: {image_path}")
+        print(f"File not found: {image_path}")
         return
     
     # Make prediction

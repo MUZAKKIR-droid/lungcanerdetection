@@ -80,8 +80,6 @@ def predict(model, image_path):
             confidence = probabilities[1] * 100
             print(f"\n{result}")
             print(f"Confidence: {confidence:.2f}%")
-            print("\n⚠️  WARNING: This is a demo model.")
-            print("   Consult a medical professional for actual diagnosis.")
         else:
             result = "✅ NO CANCER DETECTED"
             confidence = probabilities[0] * 100

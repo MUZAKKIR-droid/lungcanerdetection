@@ -6,7 +6,7 @@ This application aims to early detection of lung cancer to give patients the bes
 
 ## Contributors
 
-[Priyansh Shah](https://github.com/Priyansh42) ● [Harshil Rana](https://github.com/harshil311) ● [Ishan Shah](https://github.com/ishanshah1802) ● [Manan Shah](https://github.com/Manan2606)
+[Priyansh Shah](https://github.com/Priyansh42) ● [Aditya Rana](https://github.com/harshil311) ● [Ishan Shah](https://github.com/ishanshah1802) ● [Manan Shah](https://github.com/Manan2606)
 
 ## Dataset
 

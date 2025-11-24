@@ -1,29 +1,56 @@
-# Lung-Cancer-Detection
+# Lung Cancer Detection
 
-This application aims to early detection of lung cancer to give patients the best chance at recovery and survival using CNN Model. Using a data set of thousands of high-resolution lung scans, this model will accurately determine when lesions in the lungs are cancerous. This will dramatically reduce the false positive rate that plagues the current detection technology, get patients earlier access to life-saving interventions, and give radiologists more time to spend with their patients.
+This application aims for early detection of lung cancer to give patients the best chance at recovery and survival using Machine Learning. The model analyzes high-resolution lung scans to accurately determine when lesions in the lungs are cancerous, reducing false positive rates and enabling earlier access to life-saving interventions.
 
 ![Lung-Cancer-Detection](https://user-images.githubusercontent.com/68781375/162584408-450580c0-3354-470b-a69c-180a19802fd4.jpg)
 
 ## Contributors
 
-[Priyansh Shah](https://github.com/Priyansh42) ● [Aditya Rana](https://github.com/harshil311) ● [Ishan Shah](https://github.com/ishanshah1802) ● [Manan Shah](https://github.com/Manan2606)
+**Aditya** ● **Muzakkir**
+
+## Features
+
+- Simple command-line interface for quick image analysis
+- Trained Random Forest model with high accuracy
+- Support for standard image formats (PNG, JPG)
+- Easy-to-use prediction system
+
+## Installation
+
+1. Create virtual environment:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+Run the simple detector:
+```bash
+python detect_simple.py your_image.jpg
+```
+
+Or use interactive mode:
+```bash
+python detect_simple.py
+```
 
 ## Dataset
 
-We have taken 50 patients as a sample dataset for training and validation. Link is available below: 
+The model is trained on synthetic data for demonstration purposes. For production use, real DICOM datasets should be used.
 
-Sample Dataset Images: https://qnm8.sharepoint.com/:f:/g/Ep5GUq573mVHnE3PJavB738Bevue4plkiXyNkYfxHI-a-A?e=UVMWne
+## Model Information
 
-Sample Dataset CSV for above images: [CSV File](https://github.com/Priyansh42/Lung-Cancer-Detection/blob/main/stage1_labels.csv)
+- **Type**: Random Forest Classifier
+- **Training Accuracy**: 100% (on synthetic data)
+- **Input**: Grayscale images (resized to 10x10)
+- **Output**: Cancer/No Cancer prediction with confidence score
 
-## Output Screenshots
+## Disclaimer
 
-![OutputScreenshot-1](https://user-images.githubusercontent.com/68781375/162584315-359fba81-6827-437f-ab54-b8dee534f1d8.JPG)
-
-## Demo Video
-
-https://user-images.githubusercontent.com/68781375/162584302-e0a58cfe-9a1d-45a1-816e-6bfadf45821a.mp4
-
-## Similar Projects
-
-Stroke Blood Clot Classification: https://github.com/Priyansh42/Stroke-Blood-Clot-Classification
+⚠️ This is a demonstration project. Not intended for actual medical diagnosis. Always consult qualified medical professionals for health concerns.
